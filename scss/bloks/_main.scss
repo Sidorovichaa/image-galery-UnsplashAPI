@@ -1,0 +1,36 @@
+main {
+  background: $gradient;
+}
+
+main .container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media screen and (max-width: 970px) {
+    justify-content: center;
+  }
+}
+
+.gallery-img {
+  width: 460px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
